@@ -7,7 +7,7 @@ public:
         
  
         if(strs.size()==0){
-            result;
+           return result;
         }
         
         //unordered map with string as key to push strings with same alphabets
