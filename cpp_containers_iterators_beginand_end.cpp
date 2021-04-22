@@ -214,3 +214,66 @@ int main()
     return 0;
 }
 
+
+//deque
+
+#include <iostream>
+#include<vector>
+#include <deque>
+
+using namespace std;
+
+
+int main()
+{
+
+  deque <int> nums={0,1,2,3,4,5,6};
+
+  
+  cout<<"nums.size()"<<" "<<nums.size()<<endl;
+  
+  cout<<" front " << nums.front()<< " " << nums.back()<<endl;
+  cout<<"value at 2 index"<<" " <<nums[2]<<endl;
+  
+  
+  for(deque<int>::reverse_iterator it=nums.rbegin(); it!=nums.rend(); it++){
+      cout<<*it<< " \t";
+  }
+  cout<<endl;
+  nums.push_back(22);
+  cout<<" nums.push_back(22)" << " "<<endl;
+  
+  
+   for(deque<int>::iterator it=nums.begin(); it!=nums.end(); it++){
+      cout<<*it<< " \t";
+  }
+  cout<<endl;
+  nums.push_front(-1222);
+  cout<<" nums.push_front(24)" << " "<<endl;
+  for(deque<int>::iterator it=nums.begin(); it!=nums.end(); it++){
+      cout<<*it<< " \t";
+  }
+  
+  
+  cout<<"\n";
+   nums.pop_front();
+  cout<<" nums.pop_front()" << " "<<endl;
+  for(deque<int>::iterator it=nums.begin(); it!=nums.end(); it++){
+      cout<<*it<< " \t";
+  }
+  
+   
+  cout<<"\n";
+   nums.pop_back();
+  cout<<" nums.pop_back()" << " "<<endl;
+  for(deque<int>::iterator it=nums.begin(); it!=nums.end(); it++){
+      cout<<*it<< " \t";
+  }
+  
+  
+  nums.clear();
+
+    return 0;
+}
+
+
