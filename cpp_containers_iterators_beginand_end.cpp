@@ -397,3 +397,108 @@ int main()
 
     return 0;
 }
+
+//sets
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <set> 
+#include<string>
+#include<vector>
+
+using namespace std;
+
+class Student{
+  
+  public:
+    string name;
+    int id;
+    
+    void print_student()const{
+        cout<< " name = " <<name << " " << id<<endl;
+    }
+    
+    bool operator < (const Student& other) const{
+        return (this->id <other.id);
+        
+    }
+    
+  
+};
+
+int main()
+{
+    set<int> _set={10,30,40,40,10,40,30,40,7,8,9,10,30,3};
+    
+    cout<< " _set.size()" << " " << _set.size()<<endl;
+    
+    
+    _set.insert(30);
+    
+    for(auto element:_set){
+        cout<<element<< "\t";
+    }
+    
+    
+    cout<<endl;
+    
+     cout<< " _set.size()" << " " << _set.size()<<endl;
+     
+     
+     int num_erased= _set.erase(40);
+     
+     
+     cout<<num_erased<<endl;
+     
+     
+      for(auto element:_set){
+        cout<<element<< "\t";
+    }
+    
+    cout<<endl;
+    
+    auto it =_set.upper_bound(3);
+    
+    cout<<*it<<endl;
+        for(auto element:_set){
+        cout<<element<< "\t";
+    }
+    
+    cout<<endl;
+     auto itlb =_set.lower_bound(10);
+    cout<<*itlb<<endl;
+    
+    
+    cout<<endl;
+    
+    _set.insert({-10,-40,-4});
+    
+    vector <int > v={20,50,40,30,5,7};
+    
+    _set.insert(v.begin(),v.end());
+       for(auto element:_set){
+        cout<<element<< "\t";
+    }
+    
+    cout<<endl;
+    
+    
+    set <Student> _student={{"bhatti",1}, {"rajput",2}};
+    
+    
+    for(auto ss:_student){
+        ss.print_student();
+    }
+    
+
+    return 0;
+}
+
