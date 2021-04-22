@@ -277,3 +277,48 @@ int main()
 }
 
 
+
+#include <iostream>
+#include<stack> ;
+
+using namespace std;
+
+
+int main()
+{
+
+  stack <int> nums;
+  
+  for(int i=0;i<20;i++){
+      nums.push(i);
+  }
+
+  
+  cout<<"nums.size()"<<" "<<nums.size()<<endl;
+  
+  cout<<" top" << nums.top()<< " "<<endl;
+
+  
+ 
+  cout<<endl;
+  nums.push(22);
+
+
+
+  
+ 
+  cout<<endl;
+
+  
+  cout<<"\n";
+   nums.pop();
+
+  
+   
+
+
+
+    return 0;
+}
+
+
