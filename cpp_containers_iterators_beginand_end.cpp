@@ -357,3 +357,43 @@ int main()
 
 
 
+
+//priority queue
+
+
+#include <iostream>
+#include<queue> 
+#include <vector>
+
+using namespace std;
+
+
+
+int main()
+{
+
+  priority_queue <int, vector<int> , std::greater<int>> Q;
+  vector <int> v={1,2,3,10,4,5};
+  for (int num :v){
+      Q.push(num);
+  }
+  
+  cout<<endl;
+  
+  while(!Q.empty()){
+      cout<<Q.top()<< " \t";
+      Q.pop();
+  }
+  
+
+  
+  cout<<Q.size();
+  
+
+  
+   
+
+
+
+    return 0;
+}
