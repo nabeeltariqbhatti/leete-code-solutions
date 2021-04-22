@@ -139,3 +139,78 @@ int main()
 }
 
 
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include<vector>
+#include <list>
+
+using namespace std;
+
+void print_list(list<int> &ll){
+    for(list<int>::iterator it=ll.begin(); it!=ll.end(); it++){
+        cout<<*it<<"\t";
+        
+    }
+    cout<<endl;
+}
+int main()
+{
+
+  list <int> nums={0,1,2,3,4,5,6};
+  print_list(nums);
+  
+  cout<<"nums.size()"<<" "<<nums.size()<<endl;
+  list<int>nums2=nums;
+  cout<<"nums2.size()"<< " "<<nums2.size()<<endl;
+  cout<<"nums2.front()"<< " " <<nums2.front()<<endl;
+  
+  cout<<"nums2.back()"<< " "<< nums2.back()<<endl;
+  
+  cout<<"nums2.empty()" << " " <<std::boolalpha<< nums.empty()<<endl;
+ cout<<*nums2.begin() << " ," << *nums2.rbegin()<<endl;
+ 
+ 
+ 
+ list<int>::iterator it=nums.begin();
+ 
+ while(*it != 3 && it!=nums.end()) it++;
+ 
+ nums.insert(it,2000);
+ 
+ print_list(nums);
+ 
+ nums.erase(it);
+ print_list(nums);
+ 
+ nums.remove(2000);
+ 
+ print_list(nums);
+ 
+ nums.clear();
+ 
+ print_list(nums);
+ 
+ cout<< "empty "<< std::boolalpha<<nums.empty()<<endl;
+ 
+ cout<<"nums2.empty"<<std::boolalpha<<nums2.empty()<<endl;
+ 
+ nums.push_back(10);
+ cout<<"nums.push_back(10)"<<endl;
+ print_list(nums);
+ 
+//  nums.insert(nums.begin()+1, 100);
+ 
+ 
+//  print_list(nums)<<endl;
+    return 0;
+}
+
