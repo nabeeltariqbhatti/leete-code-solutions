@@ -322,3 +322,38 @@ int main()
 }
 
 
+
+
+
+#include <iostream>
+#include<queue> 
+
+using namespace std;
+
+
+int main()
+{
+
+  queue <int> Q;
+  
+  for(int i=0; i<20; i++){
+      Q.push(i);
+  }
+  
+  cout<<endl;
+  
+  cout<<"fornt" << " " << Q.front()<< " back" << Q.back()<<endl;
+  
+  cout<<Q.size();
+  
+
+  
+   
+
+
+
+    return 0;
+}
+
+
+
