@@ -491,7 +491,7 @@ int main()
     cout<<endl;
     
     
-    set <Student> _student={{"nabeel bhatti" ,1}};
+    set <Student> _student={{"nabeel bhatti" ,1},{"Husnain Rajput" ,1}};
     
     
     for(auto ss:_student){
