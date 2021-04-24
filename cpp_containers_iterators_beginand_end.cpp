@@ -561,3 +561,44 @@ int main(){
     return 0;
 }
 
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main()
+{
+    map<int,string> m={{10,"cat"},{20,"Dog"}, {5, "Hipo"}, {5,"bat"}};
+    
+    cout<<"size" << " "<< m.size()<<endl;
+    
+    m.insert({30,"Cow"});
+    
+    
+    m.insert({20,"Dog"});
+    
+    for(auto item:m){
+        cout<<"{ "<<item.first<< " "<< item.second<< " }"<<endl;
+    }
+    
+    cout<<"After Delection of cat"<<endl;
+    
+int it=m.erase(10);
+
+
+for(auto item:m){
+        cout<<"{ "<<item.first<< " "<< item.second<< " }"<<endl;
+    }
+    return 0;
+}
+
