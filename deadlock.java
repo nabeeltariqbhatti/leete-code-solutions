@@ -65,3 +65,32 @@ Random random =new Random();
 		
 	 }
 }
+
+
+
+
+package producerconsumer2;
+
+public class Account {
+	
+	private int balance=10000;
+	
+	public void desposit(int amount) {
+		balance += amount;
+		
+	}
+	
+	public void withdraw(int amount) {
+		balance -= amount;
+		
+	}
+	public int getBlanace() {
+		return balance;
+	}
+	
+	public static void transfer(Account acc1, Account acc2, int amount) {
+		acc1.withdraw(amount);
+		acc2.desposit(amount);
+	}
+
+}
