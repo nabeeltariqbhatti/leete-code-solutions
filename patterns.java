@@ -43,6 +43,11 @@ public class MyClass {
 //   * * * * 
 
 
+//      0 
+//     1 2 
+//    3 4 5 
+//   6 7 8 9 
+
 
  boolean check=false;
      for(int i=0; i<4; i++){
@@ -55,7 +60,8 @@ public class MyClass {
                  check = false;
              }else{
                  if(check==false){
-                     System.out.print("*");
+                      //System.out.print(counter++); uncomment this for pyramid with numbers
+                    //  System.out.print("*"); uncomment this for payramid with stars
                  }
                  check = true;
              }
