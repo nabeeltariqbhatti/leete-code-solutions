@@ -109,3 +109,34 @@ public class MyClass {
 
 
 
+
+// *
+// * *
+// *     *
+// *         *
+// *  *  *  *  *  
+
+ boolean space = false;
+        int n =5;
+      System.out.print("*");
+      System.out.println();
+      
+      for(int j = 1; j<n-1; j++){
+          
+          System.out.print("* ");
+          
+          for(int k = 1; k<=j*2-2; k++){
+                System.out.print("  ");
+          }
+           System.out.print("*");
+            System.out.println();
+           
+      }
+      
+      for(int i =0; i<n; i++){
+          System.out.print("*  ");
+      }
+
+
+
+
