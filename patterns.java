@@ -71,4 +71,41 @@ public class MyClass {
      }
 
 
+// * 
+// * * 
+// * * * 
+// * * * * 
+// * * *         
+// * *           
+// *   
+
+
+
+    boolean flip =false;
+     for( int i =0; i<7; i++){
+        if(flip == false){
+              for(int j =0; j<i;j++){
+                  System.out.print("* ");
+              }
+              if(i==4){
+                  flip = true;
+              }
+              System.out.println();
+        }
+        if(flip == true){
+            
+            for( int k= 0; k<7-i; k++){
+                System.out.print("* ");
+            }
+            for(int k=i; k>i-i; k--){
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+  
+         
+         
+     }
+
+
 
